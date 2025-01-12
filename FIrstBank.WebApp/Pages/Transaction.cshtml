@@ -1,0 +1,36 @@
+﻿@page
+@model TransactionModel
+@{
+    ViewData["Title"] = "Transaction";
+}
+
+<h1>Transaction Details</h1>
+
+<form method="get">
+    <div class="form-group">
+        <label asp-for="AccountNumber">Account Number:</label>
+        <input asp-for="AccountNumber" class="form-control" />
+        <span asp-validation-for="AccountNumber" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Get Details</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+
+@if (Model.CustomerFields != null)
+{
+    <h2>Additional Information for @Model.CustomerFields.Industry</h2>
+    <form method="post">
+        @foreach (var field in Model.CustomerFields.Fields)
+        {
+            <div class="form-group">
+                <label for="@field">@field:</label>
+                <input type="text" id="@field" name="@field" class="form-control" value="@Model.InputValues[field]" />
+            </div>
+        }
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+}

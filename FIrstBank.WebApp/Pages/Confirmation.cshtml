@@ -1,0 +1,27 @@
+﻿@page
+@model FIrstBank.WebApp.Pages.ConfirmationModel
+@{
+    ViewData["Title"] = "Confirmation";
+}
+
+<h1>Transaction Confirmation</h1>
+
+@if (Model.CustomerFields != null)
+{
+    <h3>Account Name: @Model.CustomerFields.AccountName</h3>
+    <p>Account Number: @Model.CustomerFields.AccountNumber</p>
+    <p>Industry: @Model.CustomerFields.Industry</p>
+
+    <ul>
+        @foreach (var field in Model.CustomerFields.Fields)
+        {
+            <li>@field: @Model.InputValues[field]</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No transaction data available.</p>
+}
+
+<a asp-page="./Transaction" class="btn btn-primary">Back to Transaction</a>
