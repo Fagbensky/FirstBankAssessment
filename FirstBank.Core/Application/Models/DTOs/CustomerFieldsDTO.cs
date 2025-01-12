@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FirstBank.Core.Domain.DTOs
+namespace FirstBank.Core.Application.Models.DTOs
 {
     public class CustomerFieldsDTO
     {

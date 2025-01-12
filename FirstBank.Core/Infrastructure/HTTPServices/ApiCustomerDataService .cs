@@ -1,6 +1,6 @@
 ﻿using FirstBank.Core.Application.Interfaces.HTTPService;
-using FirstBank.Core.Domain.DTOs;
-using FirstBank.Core.Domain.ViewModels;
+using FirstBank.Core.Application.Models.DTOs;
+using FirstBank.Core.Application.Models.ViewModels;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;

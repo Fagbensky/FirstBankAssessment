@@ -1,4 +1,4 @@
-using FirstBank.Core.Domain.DTOs;
+using FirstBank.Core.Application.Models.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Text.Json;

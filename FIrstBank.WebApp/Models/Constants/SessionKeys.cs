@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FirstBank.Core.Domain.Constants
+namespace FirstBank.WebApp.Models.Constants
 {
     public class SessionKeys
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace FirstBank.Core.Domain.ViewModels
+namespace FirstBank.Core.Application.Models.ViewModels
 {
     public class BaseResponse<T>
     {

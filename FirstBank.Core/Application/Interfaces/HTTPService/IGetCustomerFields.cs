@@ -1,4 +1,4 @@
-﻿using FirstBank.Core.Domain.DTOs;
+﻿using FirstBank.Core.Application.Models.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;

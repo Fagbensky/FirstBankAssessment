@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Reflection.Metadata;
 using System.Text.Json;
-using FirstBank.Core.Domain.ViewModels;
+using FirstBank.Core.Application.Models.ViewModels;
 
 namespace FirstBank.API.Filters
 {

@@ -1,6 +1,6 @@
 using FirstBank.Core.Application.Interfaces.HTTPService;
-using FirstBank.Core.Domain.Constants;
-using FirstBank.Core.Domain.DTOs;
+using FirstBank.Core.Application.Models.DTOs;
+using FirstBank.WebApp.Models.Constants;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Text.Json;

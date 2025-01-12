@@ -1,6 +1,6 @@
 ﻿using FirstBank.Core.Application.Interfaces.Services;
-using FirstBank.Core.Domain.DTOs;
-using FirstBank.Core.Domain.ViewModels;
+using FirstBank.Core.Application.Models.DTOs;
+using FirstBank.Core.Application.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FirstBank.API.Endpoints
